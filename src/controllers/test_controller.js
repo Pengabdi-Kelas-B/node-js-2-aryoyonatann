@@ -1,10 +1,10 @@
+const testController = {};
 
-const testController = {}
+testController.healthCheck = (req, res) => {
+  // logic menggunakan models
+  res.status(200).json({
+    ping: "pong !",
+  });
+};
 
-testController.healthCheck = (req,res) => {
-    res.status(200).json({
-        ping : "pong !"
-    })
-}
-
-module.exports = testController
+module.exports = testController;
